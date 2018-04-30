@@ -217,7 +217,7 @@
   if n is between 1 and 9 inclusively switch to
   the corresponding alternate font"
   [n]
-  (assert (<= 0 n 9) "expected between 0 and 9 inclusively") ;; Assert here to avoid ruining the sgr state
+  (assert (<= 0 n 9) "expected font number between 0 and 9 inclusively") ;; Assert here to avoid ruining the sgr state
   (select-graphic-rendition (+ 10 n)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
